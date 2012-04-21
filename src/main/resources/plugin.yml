@@ -1,0 +1,8 @@
+author: Daniel
+database: false
+description: Magic glass door.
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: ca.drmc.magicdoor.MagicDoor
+name: MagicDoor
+startup: postworld
+version: '0.1'
