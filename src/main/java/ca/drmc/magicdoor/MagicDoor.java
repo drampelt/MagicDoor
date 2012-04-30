@@ -36,8 +36,6 @@ public class MagicDoor extends JavaPlugin implements Listener {
         	if(p.getWorld() == w){
 	        	if(p.getLocation().distance(l) < 3 && p.hasPermission("magicdoor.use." + d.getName())){
 	        		d.setOpen(true);
-	        	}else{
-	        		d.setOpen(false);
 	        	}
         	}
         	d.update();
@@ -45,7 +43,7 @@ public class MagicDoor extends JavaPlugin implements Listener {
     }
     
     public void loadConfiguration(){
-    	getConfig().addDefault("doors", "245,95,254,");
+    	getConfig().addDefault("doors", "245,95,254,world,doorone");
     	getConfig().options().copyDefaults(true);
     	String[] doorlist = getConfig().getString("doors").split(";");
     	for(int i = 0; i < doorlist.length; i++){
