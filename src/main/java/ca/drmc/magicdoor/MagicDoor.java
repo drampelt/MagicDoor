@@ -36,6 +36,8 @@ public class MagicDoor extends JavaPlugin implements Listener {
         	if(p.getWorld() == w){
 	        	if(p.getLocation().distance(l) < 3 && p.hasPermission("magicdoor.use." + d.getName())){
 	        		d.setOpen(true);
+	        	}else{
+	        		d.setOpen(false);
 	        	}
         	}
         	d.update();
